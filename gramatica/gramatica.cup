@@ -21,7 +21,10 @@ precedence left UMINUS;
 /* The grammar */
 sentencias ::= sentencia FINLINEA | sentencia FINLINEA sentencias | expr_list ;
 
-sentencia ::= BAJALAPIZ | SUBELAPIZ | GIRAIZQUIERDA | GIRADERECHA ;
+sentencia ::= BAJALAPIZ | 
+						SUBELAPIZ {: System.out.println("Subiendo lapiz") ; :}| 
+						GIRAIZQUIERDA | 
+						GIRADERECHA ;
 expr_list ::= expr_list expr_part 
 	      | 
               expr_part;

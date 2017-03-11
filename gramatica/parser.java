@@ -210,7 +210,7 @@ class CUP$parser$actions {
           case 5: // sentencia ::= SUBELAPIZ 
             {
               Object RESULT =null;
-
+		 System.out.println("Subiendo lapiz") ; 
               CUP$parser$result = parser.getSymbolFactory().newSymbol("sentencia",1, ((java_cup.runtime.Symbol)CUP$parser$stack.peek()), ((java_cup.runtime.Symbol)CUP$parser$stack.peek()), RESULT);
             }
           return CUP$parser$result;
